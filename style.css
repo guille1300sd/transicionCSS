@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: lightblue;
+}
+
+.contenedor {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.fondo {
+  transition: 0.5s;
+}
+
+.fondo:hover {
+  transition: 2s;
+  transform: scale(1.20);
+  transition-delay: 0.2s;
+}
+
+.icono1 {
+  opacity: 0;
+  z-index: 1;
+  transform: rotateY(270deg);
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  transition-duration: 0.5s;
+}
+
+.contenedor:hover .icono1 {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition-delay: 1s;
+  transition-duration: 3s;
+}
+
+.icono2 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(0deg);
+}
+
+
+.icono3 {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(0deg);
+}
+
+.contenedor:hover .iconoC{
+  transition-duration: 3s;
+  transition-delay: 1s;
+  transform: rotateY(360deg);
+  opacity: 1;
+}
